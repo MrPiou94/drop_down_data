@@ -16,7 +16,7 @@ Following steps will help you add this library as a dependency in your flutter p
 
 ```yaml
 dependencies:
-  drop_down_data: ^0.0.4
+  drop_down_data: ^1.0.0
 ```
 
 - Import the package in your code:
@@ -28,9 +28,10 @@ import 'package:drop_down_data/drop_down_data.dart';
 
 ## 📸 Screenshots
 
-| Example                    | Video                             |
-|----------------------------| --------------------------------- |
-| ![](./assets/img_demo.png) | ![](./assets/video_demo.gif)      |
+| Example                    | Video                            |
+|----------------------------| -------------------------------- |
+| ![](./assets/img_demo.png) | ![](./assets/video_demo.gif)     |
+| ![](https://github.com/MrPiou94/drop_down_data/blob/main/assets/img_demo.png) | ![](https://github.com/MrPiou94/drop_down_data/blob/main/assets/video_demo.gif)      |
 
 
 ## 👀 Usage
