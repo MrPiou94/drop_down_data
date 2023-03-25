@@ -48,12 +48,6 @@ void initState() {
 }
 
 @override
-void dispose() {
-  _controller.dispose();
-  super.dispose();
-}
-
-@override
 Widget build(BuildContext context) {
   ThemeData theme = Theme.of(context);
   TextTheme textTheme = theme.textTheme;
