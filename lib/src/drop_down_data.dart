@@ -1,8 +1,11 @@
+import 'package:drop_down_data/src/dynamic_button.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'dynamic_button.dart';
 
+/// DropDownData
+///
+/// Structure Data for use Drop-down.
 class DataDropDown {
   final String? id;
   final String? name;
@@ -29,15 +32,18 @@ class DataDropDown {
   }
 }
 
+/// DropDownData
+///
+/// Drop-down list of data.dart allowing to make one or more selections and to search among the data.dart or an identifier.
 class DropDownData extends StatefulWidget { // ConsumerStatefulWidget
 
-  final Widget? childButton;          /// TODOO CHILD BUTTON PERSO
+  final Widget? childButton;      //  CHILD BUTTON CUSTOM
   final List<DataDropDown> listData;
   final String? tooltip;
   final String title;
-  final String value;             /// Name Current + Selection if uuidValue !=""
-  final String uuidValue;         /// Select uuid
-  final List<String>? uuidValues; /// Select uuid multi
+  final String value;             // Name Current + Selection if uuidValue !=""
+  final String uuidValue;         // Select uuid
+  final List<String>? uuidValues; // Select uuid multi
   final bool addFirstEmpty;
   final bool viewNumber;
   final bool selection;
@@ -112,11 +118,11 @@ class DropDownDataState extends State<DropDownData> {
   }
   @override
   Widget build(BuildContext context) {
-/*
-    return MouseRegion(
-        cursor: SystemMouseCursors.click,
-        child: Container(color: Colors.red,height: 50,width: 50,));
-*/
+
+    //return MouseRegion(
+    //    cursor: SystemMouseCursors.click,
+    //    child: Container(color: Colors.red,height: 50,width: 50,));
+
     return widget.tooltip != null ? Tooltip(message: widget.tooltip,
               child: dropDown(context)) : dropDown(context);
   }
@@ -240,7 +246,7 @@ class DropDownDataState extends State<DropDownData> {
                                               textAlign: TextAlign.right,
                                               text: TextSpan(
                                                 children: <TextSpan>[
-                                                  TextSpan(text: "${listCurrent[i].id.toString()}", style: const TextStyle(fontSize: 10, color: Colors.white24, )),
+                                                  TextSpan(text: listCurrent[i].id.toString(), style: const TextStyle(fontSize: 10, color: Colors.white24, )),
                                                 ],),),),),
 
 
@@ -279,7 +285,7 @@ class DropDownDataState extends State<DropDownData> {
                       //_fieldFocusChange(context, _nameFocus, _emailFocus);
                     });
                   }else{
-                    FocusScope.of(context).unfocus(); /// Defocus Text Change
+                    FocusScope.of(context).unfocus();
                     searchController.value = searchController.value.copyWith(text: "",);
                     _searchFocus.unfocus();
                     searchEnable = false;

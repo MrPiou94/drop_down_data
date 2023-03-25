@@ -1,6 +1,6 @@
 name: drop_down_data
 description: Drop-down list of data.dart allowing to make one or more selections and to search among the data.dart or an identifier.
-version: 1.0.2
+version: 1.0.3
 # authors: AYLIcrea with AsYouLikeKit <aylibox@gmail.com>
 homepage: https://github.com/MrPiou94/drop_down_data
 

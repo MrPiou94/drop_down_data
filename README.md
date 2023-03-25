@@ -16,7 +16,7 @@ Following steps will help you add this library as a dependency in your flutter p
 
 ```yaml
 dependencies:
-  drop_down_data: ^1.0.2
+  drop_down_data: ^1.0.3
 ```
 
 - Import the package in your code:

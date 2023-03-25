@@ -1,10 +1,8 @@
-library dynamic_button;
 import 'package:flutter/material.dart';
 
 /// DynamicButton
 ///
 /// style = "Stadium",  /// Stadium // Rectangle // Circle // Beveled
-///
 class DynamicButton extends StatelessWidget {
 
  // final bool colorTextAuto;
@@ -59,11 +57,10 @@ class DynamicButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return tooltip != null ? Tooltip(message: tooltip, child: button(context)) : button(context);
+    return tooltip != null ? Tooltip(message: tooltip, child: buttonDynamic(context)) : buttonDynamic(context);
   }
 
-  @override
-  Widget button(BuildContext context) {
+  Widget buttonDynamic(BuildContext context) {
     ThemeData theme = Theme.of(context);
     TextTheme textTheme = theme.textTheme;
     ColorScheme colorScheme = theme.colorScheme;
@@ -112,7 +109,7 @@ class DynamicButton extends StatelessWidget {
         // Color Icon
         foregroundColor: MaterialStatePropertyAll<Color?>(  iconColor ?? colorScheme.onPrimary ), /// Color icon
         // Color Text
-        textStyle: MaterialStateProperty.all<TextStyle>( textStyle!=null ? textStyle!.copyWith( color: textColor ?? colorScheme.onPrimary ) : textTheme.button!.copyWith(color: textColor ?? colorScheme.onPrimary,) ),
+        textStyle: MaterialStateProperty.all<TextStyle>( textStyle!=null ? textStyle!.copyWith( color: textColor ?? colorScheme.onPrimary ) : textTheme.bodyMedium!.copyWith(color: textColor ?? colorScheme.onPrimary,) ),
         ///----------------------------------------------------------------------------
         padding: MaterialStateProperty.all<EdgeInsetsGeometry>( EdgeInsets.symmetric(horizontal: paddingH,vertical: paddingV) ),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -155,7 +152,7 @@ class DynamicButton extends StatelessWidget {
         // Color Icon
         foregroundColor: MaterialStatePropertyAll<Color?>(  iconColor ?? colorScheme.onPrimary ), /// Color icon
         // Color Text
-        textStyle: MaterialStateProperty.all<TextStyle>( textStyle!=null ? textStyle!.copyWith( color: textColor ?? colorScheme.onPrimary ) : textTheme.button!.copyWith(color: textColor ?? colorScheme.onPrimary,) ),
+        textStyle: MaterialStateProperty.all<TextStyle>( textStyle!=null ? textStyle!.copyWith( color: textColor ?? colorScheme.onPrimary ) : textTheme.bodyMedium!.copyWith(color: textColor ?? colorScheme.onPrimary,) ),
         ///----------------------------------------------------------------------------
         padding: MaterialStateProperty.all<EdgeInsetsGeometry>( EdgeInsets.all( paddingH ) ),
         shape: MaterialStateProperty.all<CircleBorder>(
@@ -195,7 +192,7 @@ class DynamicButton extends StatelessWidget {
         // Color Icon
         foregroundColor: MaterialStatePropertyAll<Color?>(  iconColor ?? colorScheme.onPrimary ), /// Color icon
         // Color Text
-        textStyle: MaterialStateProperty.all<TextStyle>( textStyle!=null ? textStyle!.copyWith( color: textColor ?? colorScheme.onPrimary ) : textTheme.button!.copyWith(color: textColor ?? colorScheme.onPrimary,) ),
+        textStyle: MaterialStateProperty.all<TextStyle>( textStyle!=null ? textStyle!.copyWith( color: textColor ?? colorScheme.onPrimary ) : textTheme.bodyMedium!.copyWith(color: textColor ?? colorScheme.onPrimary,) ),
         ///----------------------------------------------------------------------------
         padding: MaterialStateProperty.all<EdgeInsetsGeometry>( EdgeInsets.symmetric(horizontal: paddingH,vertical: paddingV) ),
         shape: MaterialStateProperty.all<BeveledRectangleBorder>(
@@ -237,7 +234,7 @@ class DynamicButton extends StatelessWidget {
         // Color Icon
         foregroundColor: MaterialStatePropertyAll<Color?>(  iconColor ?? colorScheme.onPrimary ), /// Color icon
         // Color Text
-        textStyle: MaterialStateProperty.all<TextStyle>( textStyle!=null ? textStyle!.copyWith( color: textColor ?? colorScheme.onPrimary ) : textTheme.button!.copyWith(color: textColor ?? colorScheme.onPrimary,) ),
+        textStyle: MaterialStateProperty.all<TextStyle>( textStyle!=null ? textStyle!.copyWith( color: textColor ?? colorScheme.onPrimary ) : textTheme.bodyMedium!.copyWith(color: textColor ?? colorScheme.onPrimary,) ),
         ///----------------------------------------------------------------------------
         padding: MaterialStateProperty.all<EdgeInsetsGeometry>( EdgeInsets.symmetric(horizontal: paddingH,vertical: paddingV) ),
         shape: MaterialStateProperty.all<StadiumBorder>(
@@ -253,12 +250,12 @@ class DynamicButton extends StatelessWidget {
           if( icon != null && title != "" )const SizedBox(width: 5),
           if(title != "" )Flexible(child: Text(title!,
             style: textStyle != null ? textStyle!.copyWith( color: textColor ?? colorScheme.onBackground ) :
-            textTheme.button!.copyWith(  color: textColor ?? colorScheme.onBackground ),
-          ),),/**
-          if(title != "")Flexible(child: CustomsTextAnimated(
-            title: title,
-            uuidTitle: styleTitle,
-          ),),*/
+            textTheme.bodyMedium!.copyWith(  color: textColor ?? colorScheme.onBackground ),
+          ),),
+          //if(title != "")Flexible(child: CustomsTextAnimated(
+          //  title: title,
+          //  uuidTitle: styleTitle,
+          //),),
 
           if( end != null )const SizedBox(width: 5),
 
