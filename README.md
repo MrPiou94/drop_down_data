@@ -30,7 +30,6 @@ import 'package:drop_down_data/drop_down_data.dart';
 
 | Example                    | Video                            |
 |----------------------------| -------------------------------- |
-| ![](./assets/img_demo.png) | ![](./assets/video_demo.gif)     |
 | ![](https://github.com/MrPiou94/drop_down_data/blob/main/assets/img_demo.png) | ![](https://github.com/MrPiou94/drop_down_data/blob/main/assets/video_demo.gif)      |
 
 
