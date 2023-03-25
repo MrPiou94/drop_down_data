@@ -1,4 +1,4 @@
-## 1.0.1
+## 1.0.2
 
 - Add `drop_down_data` ready for use.
 
