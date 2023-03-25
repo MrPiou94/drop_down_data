@@ -1,7 +1,7 @@
 ## Drop_Down_Data
 
 [![Pub](https://img.shields.io/pub/v/video_editor.svg)](https://pub.dev/packages/drop_down_data)
-[![GitHub stars](https://img.shields.io/github/stars/LeGoffMael/video_editor?style=social)](https://github.com/MrPiou94/drop_down_data/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/MrPiou94/drop_down_data?style=social)](https://github.com/MrPiou94/drop_down_data/stargazers)
 
 ## Description
 
