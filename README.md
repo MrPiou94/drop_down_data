@@ -12,4 +12,4 @@ To use this plugin, add `drop_down_data` as a [dependency in your pubspec.yaml f
 
 | Example                                 | Video                             |
 | --------------------------------------- | --------------------------------- |
-| ![](./assets/demo.png)                  | ![](./assets/video_demo.mp4)      |
+| ![](./assets/demo.png)                  | ![](./assets/video_demo.gif)      |
