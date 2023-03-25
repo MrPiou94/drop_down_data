@@ -2,7 +2,7 @@ name: drop_down_data
 description: Drop-down list of data allowing to make one or more selections and to search among the data or an identifier.
 version: 0.0.1
 # authors: AYLIcrea with AsYouLikeKit <aylibox@gmail.com>
-homepage: https://github.com/MrPiou94/AsYouLikeKit-drop_down_data.git
+homepage: https://github.com/MrPiou94/drop_down_data.git
 
 environment:
   sdk: '>=2.19.4 <3.0.0'
