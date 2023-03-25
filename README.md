@@ -10,6 +10,6 @@ To use this plugin, add `drop_down_data` as a [dependency in your pubspec.yaml f
 
 ## 📸 Screenshots
 
-| Example                                 | Video                             |
-| --------------------------------------- | --------------------------------- |
-| ![](./assets/demo.png)                  | ![](./assets/video_demo.gif)      |
+| Example                    | Video                             |
+|----------------------------| --------------------------------- |
+| ![](./assets/img_demo.png) | ![](./assets/video_demo.gif)      |
