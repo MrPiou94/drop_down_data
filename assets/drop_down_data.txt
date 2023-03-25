@@ -1,0 +1,3 @@
+
+Description
+Drop-down list of data allowing to make one or more selections and to search among the data or an identifier.
