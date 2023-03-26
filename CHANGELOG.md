@@ -1,3 +1,7 @@
+## 1.0.5
+
+- Add `drop_down_data` flutter format .
+
 ## 1.0.4
 
 - Add `drop_down_data` documentation comments.
