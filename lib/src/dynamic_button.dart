@@ -60,6 +60,7 @@ class DynamicButton extends StatelessWidget {
     return tooltip != null ? Tooltip(message: tooltip, child: buttonDynamic(context)) : buttonDynamic(context);
   }
 
+  /// Button Custom
   Widget buttonDynamic(BuildContext context) {
     ThemeData theme = Theme.of(context);
     TextTheme textTheme = theme.textTheme;
@@ -68,11 +69,11 @@ class DynamicButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: enabled ==false ? null:(){
         if(enabled){if(onTap!=null){onTap!();}
-        }else{null;}
+        }//else{null;}
       },
       onLongPress: enabled ==false ? null:(){
         if(enabled){if(onLongTap!=null){onLongTap!();}
-        }else{null;}
+        }//else{null;}
       },
       onHover: (bool newVal) {
 

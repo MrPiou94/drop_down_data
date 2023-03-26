@@ -78,15 +78,19 @@ class DropDownDataState extends State<DropDownData> {
   final TextEditingController searchController = TextEditingController();
   final FocusNode _searchFocus = FocusNode();
 
+
+  /// Call back parent current Selection
+  void returnSelection(int index) {
+    FocusScope.of(context).unfocus();
+    if(widget.selection){widget.selectionCallback(listCurrent[ index ]);}
+  }
+  /// Remove All "é" to "e" for Search
   String getValidSearch( String path ){
     return path.toLowerCase().replaceAll(" ", "")
         .replaceAll("é", "e").replaceAll("è", "e")
         .replaceAll("ê", "e").replaceAll("ë", "e");
   }
-  void returnSelection(int index) {
-    FocusScope.of(context).unfocus();
-    if(widget.selection){widget.selectionCallback(listCurrent[ index ]);}
-  }
+  /// Current list with Search
   List<DataDropDown> returnList( ) {
     listCurrent = List.generate(widget.listData.length, (index) => widget.listData[index]);
     listCurrent.removeWhere((thisData) =>
@@ -102,6 +106,7 @@ class DropDownDataState extends State<DropDownData> {
     }
     return listCurrent;
   }
+  /// Get List Init
   initListData(_) async {
     returnList( );
   }
@@ -123,9 +128,12 @@ class DropDownDataState extends State<DropDownData> {
     //    cursor: SystemMouseCursors.click,
     //    child: Container(color: Colors.red,height: 50,width: 50,));
 
+    /// If tooltip enable
     return widget.tooltip != null ? Tooltip(message: widget.tooltip,
               child: dropDown(context)) : dropDown(context);
   }
+
+  /// Button For Drop Data
   Widget dropDown(BuildContext context) {
     ThemeData theme = Theme.of(context);
     TextTheme textTheme = theme.textTheme;
